@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Meta: mobile-first + good SEO/social basics -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Francis Adom — student portfolio of an aspiring software engineer." />
-  <title>Francis Adom portfolio and academic website</title>
+  <head>
+    <!-- Meta: mobile-first + good SEO/social basics -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Francis Adom — student portfolio of an aspiring software engineer."
+    />
+    <title>Francis Adom portfolio and academic website</title>
 
-  <!-- Modern, readable fonts (headings + mono for numbers) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Modern, readable fonts (headings + mono for numbers) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <!-- Skip link: accessibility for keyboard users -->
-  <a class="skip-to-content" href="#main">Skip to content</a>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Skip link: accessibility for keyboard users -->
+    <a class="skip-to-content" href="#main">Skip to content</a>
 
-  <!-- ===========================
+    <!-- ===========================
        Sticky Navigation Header
        ===========================
        .site-header = whole sticky bar
@@ -28,29 +34,36 @@
        .nav__cta = primary button ("Hire me")
        .nav-toggle = checkbox used to open/close mobile menu (no JS)
   -->
-  <header class="site-header">
-    <nav class="nav container" aria-label="Primary">
-      <a href="#" class="brand">Francis<span class="dot">.</span></a>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary">
+        <a href="#" class="brand">Francis<span class="dot">.</span></a>
 
-      <!-- Mobile menu toggle (checkbox hack: when checked, menu opens) -->
-      <input id="nav-toggle" class="nav-toggle" type="checkbox" aria-label="Open menu">
-      <label class="hamburger" for="nav-toggle" aria-hidden="true">
-        <span></span><span></span><span></span>
-      </label>
+        <!-- Mobile menu toggle (checkbox hack: when checked, menu opens) -->
+        <input
+          id="nav-toggle"
+          class="nav-toggle"
+          type="checkbox"
+          aria-label="Open menu"
+        />
+        <label class="hamburger" for="nav-toggle" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </label>
 
-      <ul class="nav__links">
-        <!-- Use hash links that match section IDs below -->
-        <li><a href="#home" class="is-active">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li class="nav__cta-wrap"><a class="btn btn--primary nav__cta" href="#contact">Hire me</a></li>
-      </ul>
-    </nav>
-  </header>
+        <ul class="nav__links">
+          <!-- Use hash links that match section IDs below -->
+          <li><a href="#home" class="is-active">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="nav__cta-wrap">
+            <a class="btn btn--primary nav__cta" href="#contact">Hire me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- ===========================
+    <!-- ===========================
        Hero / Intro
        ===========================
        #home = anchor for nav
@@ -58,217 +71,314 @@
        .hero__text = left column (copy, buttons, socials)
        .hero__media = right column (profile image with animated ring)
   -->
-  <main id="main">
-    <section id="home" class="hero container">
-      <div class="hero__text">
-        <!-- Small eyebrow label above main heading -->
-        <p class="eyebrow">Aspiring Software Developer</p>
+    <main id="main">
+      <section id="home" class="hero container">
+        <div class="hero__text">
+          <!-- Small eyebrow label above main heading -->
+          <p class="eyebrow">Aspiring Software Developer</p>
 
-        <!-- Big friendly greeting; span accents for color emphasis -->
-        <h1 class="hero__title">
-          Hello I'm <span class="accent">Francis Adom</span><br>
-          <span class="accent">Fransco</span>
-        </h1>
+          <!-- Big friendly greeting; span accents for color emphasis -->
+          <h1 class="hero__title">
+            Hello I'm <span class="accent">Francis Adom</span><br />
+            <span class="accent">Yeboah</span>
+          </h1>
 
-        <!-- Short pitch with strong verbs and clear value -->
-        <p class="hero__lead">
-          I build fast, accessible, and reliable software solutions.
-          I learn by doing, ship iteratively, and love turning complex ideas
-          into simple, delightful experiences.
-        </p>
+          <!-- Short pitch with strong verbs and clear value -->
+          <p class="hero__lead">
+            I build fast, accessible, and reliable software solutions. I learn
+            by doing, ship iteratively, and love turning complex ideas into
+            simple, delightful experiences.
+          </p>
 
-        <!-- Primary actions: download CV + socials -->
-        <div class="hero__actions">
-          <!-- .btn = reusable button; .btn--primary = accent style -->
-          <a class="btn btn--primary" href="assets/kwabena-cv.pdf" download>
-            <svg aria-hidden="true" viewBox="0 0 24 24" class="icon"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
-            Download CV
-          </a>
-
-          <!-- Social links: accessible labels + inline SVG so no external files -->
-          <div class="social">
-            <a aria-label="GitHub" href="https://github.com/IngFrancis" class="social__link">
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.04c-3.34.73-4.04-1.61-4.04-1.61-.55-1.41-1.34-1.79-1.34-1.79-1.09-.75.08-.74.08-.74 1.2.09 1.83 1.23 1.83 1.23 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.48-1.34-5.48-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.62-2.82 5.64-5.5 5.94.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+          <!-- Primary actions: download CV + socials -->
+          <div class="hero__actions">
+            <!-- .btn = reusable button; .btn--primary = accent style -->
+            <a class="btn btn--primary" href="assets/kwabena-cv.pdf" download>
+              <svg aria-hidden="true" viewBox="0 0 24 24" class="icon">
+                <path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14" />
+              </svg>
+              Download CV
             </a>
-            <a aria-label="LinkedIn" href="https://www.linkedin.com/in/francis-yeboah-adom" class="social__link">
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5Zm.04 6H2V22h3V9.5ZM8 9.5h3v1.7c.4-.8 1.4-1.9 3.3-1.9 3.5 0 4.2 2.2 4.2 5V22h-3v-6c0-1.4 0-3.3-2-3.3s-2.3 1.5-2.3 3.2V22H8V9.5Z"/></svg>
-            </a>
-            <a aria-label="Twitter/X" href="#" class="social__link">
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.53 3H21l-7.5 8.56L22.5 21H15l-5-6.16L4 21H.5l8.2-9.38L0 3h7l4.62 5.69L17.53 3Z"/></svg>
-            </a>
+
+            <!-- Social links: accessible labels + inline SVG so no external files -->
+            <div class="social">
+              <a
+                aria-label="GitHub"
+                href="https://github.com/IngFrancis"
+                class="social__link"
+              >
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.04c-3.34.73-4.04-1.61-4.04-1.61-.55-1.41-1.34-1.79-1.34-1.79-1.09-.75.08-.74.08-.74 1.2.09 1.83 1.23 1.83 1.23 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.48-1.34-5.48-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.62-2.82 5.64-5.5 5.94.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"
+                  />
+                </svg>
+              </a>
+              <a
+                aria-label="LinkedIn"
+                href="https://www.linkedin.com/in/francis-yeboah-adom"
+                class="social__link"
+              >
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5Zm.04 6H2V22h3V9.5ZM8 9.5h3v1.7c.4-.8 1.4-1.9 3.3-1.9 3.5 0 4.2 2.2 4.2 5V22h-3v-6c0-1.4 0-3.3-2-3.3s-2.3 1.5-2.3 3.2V22H8V9.5Z"
+                  />
+                </svg>
+              </a>
+              <a aria-label="Twitter/X" href="#" class="social__link">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M17.53 3H21l-7.5 8.56L22.5 21H15l-5-6.16L4 21H.5l8.2-9.38L0 3h7l4.62 5.69L17.53 3Z"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
+
+          <!-- Quick stats: small, confidence-building metrics -->
+          <ul class="stats">
+            <!-- Each .stat shows a numb</svg>er + label.
+               data-label is used only for semantics (no JS needed). -->
+            <li class="stat">
+              <span class="stat__number">2</span>
+              <span class="stat__label">Years experience</span>
+            </li>
+            <li class="stat">
+              <span class="stat__number">15</span>
+              <span class="stat__label">Projects completed</span>
+            </li>
+            <li class="stat">
+              <span class="stat__number">5</span>
+              <span class="stat__label">Technologies mastered</span>
+            </li>
+            <li class="stat">
+              <span class="stat__number">600+</span>
+              <span class="stat__label">Code commits</span>
+            </li>
+          </ul>
         </div>
 
-        <!-- Quick stats: small, confidence-building metrics -->
-        <ul class="stats">
-          <!-- Each .stat shows a numb</svg>er + label.
-               data-label is used only for semantics (no JS needed). -->
-          <li class="stat">
-            <span class="stat__number">2</span>
-            <span class="stat__label">Years experience</span>
-          </li>
-          <li class="stat">
-            <span class="stat__number">15</span>
-            <span class="stat__label">Projects completed</span>
-          </li>
-          <li class="stat">
-            <span class="stat__number">5</span>
-            <span class="stat__label">Technologies mastered</span>
-          </li>
-          <li class="stat">
-            <span class="stat__number">600+</span>
-            <span class="stat__label">Code commits</span>
-          </li>
-        </ul>
-      </div>
+        <!-- Profile image with animated ring -->
+        <div class="hero__media" aria-hidden="true">
+          <figure class="avatar">
+            <!-- Replace with your own image path -->
+            <img
+              src="https://i.imgur.com/DdQR4Xf.jpeg"
+              alt="Portrait of Francis Adom"
+              class="avatar__img"
+            />
+          </figure>
+        </div>
+      </section>
 
-      <!-- Profile image with animated ring -->
-      <div class="hero__media" aria-hidden="true">
-        <figure class="avatar">
-          <!-- Replace with your own image path -->
-          <img src="https://i.imgur.com/DdQR4Xf.jpeg" alt="Portrait of Francis Adom" class="avatar__img">
-        </figure>
-      </div>
-    </section>
-
-    <!-- ===========================
+      <!-- ===========================
          Services / What I Do
          ===========================
          #services = anchor
          .cards = responsive grid (1/2/3 cols)
          .card = individual glass card
     -->
-    <section id="services" class="section container">
-      <header class="section__head">
-        <h2 class="section__title">What I Do</h2>
-        <p class="section__desc">From idea to deployment — clean code, fast performance, and friendly UX.</p>
-      </header>
+      <section id="services" class="section container">
+        <header class="section__head">
+          <h2 class="section__title">What I Do</h2>
+          <p class="section__desc">
+            From idea to deployment — clean code, fast performance, and friendly
+            UX.
+          </p>
+        </header>
 
-      <div class="cards">
-        <article class="card">
-          <div class="card__icon" aria-hidden="true">⚡</div>
-          <h3 class="card__title">Frontend Engineering</h3>
-          <p class="card__body">Responsive UIs with semantic HTML, modern CSS, and component-driven React.</p>
-        </article>
+        <div class="cards">
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">⚡</div>
+            <h3 class="card__title">Frontend Engineering</h3>
+            <p class="card__body">
+              Responsive UIs with semantic HTML, modern CSS, and
+              component-driven React.
+            </p>
+          </article>
 
-        <article class="card">
-          <div class="card__icon" aria-hidden="true">🧠</div>
-          <h3 class="card__title">Problem Solving</h3>
-          <p class="card__body">Data structures, algorithms, and performance profiling for real results.</p>
-        </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🧠</div>
+            <h3 class="card__title">Problem Solving</h3>
+            <p class="card__body">
+              Data structures, algorithms, and performance profiling for real
+              results.
+            </p>
+          </article>
 
-        <article class="card">
-          <div class="card__icon" aria-hidden="true">🔒</div>
-          <h3 class="card__title">Quality & Accessibility</h3>
-          <p class="card__body">A11y, keyboard support, color contrast, and robust testing culture.</p>
-        </article>
-      </div>
-    </section>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🔒</div>
+            <h3 class="card__title">Quality & Accessibility</h3>
+            <p class="card__body">
+              A11y, keyboard support, color contrast, and robust testing
+              culture.
+            </p>
+          </article>
+        </div>
+      </section>
 
-    <!-- ===========================
+      <!-- ===========================
          Resume Highlight
          ===========================
          #resume = anchor
          .resume = compact timeline-esque blocks
     -->
-    <section id="resume" class="section container">
-      <header class="section__head">
-        <h2 class="section__title">Resume Snapshot</h2>
-        <p class="section__desc">Learning by building, collaborating, and shipping.</p>
-      </header>
+      <section id="resume" class="section container">
+        <header class="section__head">
+          <h2 class="section__title">Resume Snapshot</h2>
+          <p class="section__desc">
+            Learning by building, collaborating, and shipping.
+          </p>
+        </header>
 
-      <div class="resume">
-        <div class="resume__item">
-          <h3 class="resume__role">Software Engineering Student</h3>
-          <p class="resume__meta">2023 — Present • Personal Projects / Open Source</p>
-          <p class="resume__text">Built portfolios, dashboards, and micro-tools; used GitHub daily; practiced code reviews.</p>
+        <div class="resume">
+          <div class="resume__item">
+            <h3 class="resume__role">Software Engineering Student</h3>
+            <p class="resume__meta">
+              2023 — Present • Personal Projects / Open Source
+            </p>
+            <p class="resume__text">
+              Built portfolios, dashboards, and micro-tools; used GitHub daily;
+              practiced code reviews.
+            </p>
+          </div>
+          <div class="resume__item">
+            <h3 class="resume__role">STEM Club — Project Lead</h3>
+            <p class="resume__meta">2022 — 2023 • KOSS</p>
+            <p class="resume__text">
+              Led a small team to design a mini IoT project that monitored
+              classroom air quality.
+            </p>
+          </div>
         </div>
-        <div class="resume__item">
-          <h3 class="resume__role">STEM Club — Project Lead</h3>
-          <p class="resume__meta">2022 — 2023 • KOSS</p>
-          <p class="resume__text">Led a small team to design a mini IoT project that monitored classroom air quality.</p>
+
+        <div class="center">
+          <a class="btn btn--outline" href="assets/kwabena-cv.pdf" download
+            >Download Full CV</a
+          >
         </div>
-      </div>
+      </section>
 
-      <div class="center">
-        <a class="btn btn--outline" href="assets/kwabena-cv.pdf" download>Download Full CV</a>
-      </div>
-    </section>
-
-    <!-- ===========================
+      <!-- ===========================
          Selected Work / Projects
          ===========================
          #work = anchor
          .project-grid = responsive grid of cards
     -->
-    <section id="work" class="section container">
-      <header class="section__head">
-        <h2 class="section__title">Selected Work</h2>
-        <p class="section__desc">Small, focused projects that solve real problems.</p>
-      </header>
+      <section id="work" class="section container">
+        <header class="section__head">
+          <h2 class="section__title">Selected Work</h2>
+          <p class="section__desc">
+            Small, focused projects that solve real problems.
+          </p>
+        </header>
 
-      <div class="project-grid">
-        <article class="project">
-          <div class="project__thumb" role="img" aria-label="Preview of Portfolio Website"></div>
-          <div class="project__content">
-            <h3 class="project__title">Portfolio v2</h3>
-            <p class="project__tags"><span>HTML</span><span>CSS</span><span>Responsive</span></p>
-            <a class="project__link" href="#" aria-label="Open project Portfolio v2">View project →</a>
-          </div>
-        </article>
+        <div class="project-grid">
+          <article class="project">
+            <div
+              class="project__thumb"
+              role="img"
+              aria-label="Preview of Portfolio Website"
+            ></div>
+            <div class="project__content">
+              <h3 class="project__title">Portfolio v2</h3>
+              <p class="project__tags">
+                <span>HTML</span><span>CSS</span><span>Responsive</span>
+              </p>
+              <a
+                class="project__link"
+                href="#"
+                aria-label="Open project Portfolio v2"
+                >View project →</a
+              >
+            </div>
+          </article>
 
-        <article class="project">
-          <div class="project__thumb project__thumb--two" role="img" aria-label="Preview of Task Manager App"></div>
-          <div class="project__content">
-            <h3 class="project__title">Task Manager</h3>
-            <p class="project__tags"><span>React</span><span>API</span><span>UX</span></p>
-            <a class="project__link" href="#" aria-label="Open project Task Manager">View project →</a>
-          </div>
-        </article>
+          <article class="project">
+            <div
+              class="project__thumb project__thumb--two"
+              role="img"
+              aria-label="Preview of Task Manager App"
+            ></div>
+            <div class="project__content">
+              <h3 class="project__title">Task Manager</h3>
+              <p class="project__tags">
+                <span>React</span><span>API</span><span>UX</span>
+              </p>
+              <a
+                class="project__link"
+                href="#"
+                aria-label="Open project Task Manager"
+                >View project →</a
+              >
+            </div>
+          </article>
 
-        <article class="project">
-          <div class="project__thumb project__thumb--three" role="img" aria-label="Preview of Data Dashboard"></div>
-          <div class="project__content">
-            <h3 class="project__title">Data Dashboard</h3>
-            <p class="project__tags"><span>Charts</span><span>Perf</span><span>Accessibility</span></p>
-            <a class="project__link" href="#" aria-label="Open project Data Dashboard">View project →</a>
-          </div>
-        </article>
-      </div>
-    </section>
+          <article class="project">
+            <div
+              class="project__thumb project__thumb--three"
+              role="img"
+              aria-label="Preview of Data Dashboard"
+            ></div>
+            <div class="project__content">
+              <h3 class="project__title">Data Dashboard</h3>
+              <p class="project__tags">
+                <span>Charts</span><span>Perf</span><span>Accessibility</span>
+              </p>
+              <a
+                class="project__link"
+                href="#"
+                aria-label="Open project Data Dashboard"
+                >View project →</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
 
-    <!-- ===========================
+      <!-- ===========================
          Contact
          ===========================
          #contact = anchor
          .contact = simple contact card + mail link (no backend)
     -->
-    <section id="contact" class="section container">
-      <header class="section__head">
-        <h2 class="section__title">Let's work together</h2>
-        <p class="section__desc">Tell me about your idea — I'll reply within 24 hours.</p>
-      </header>
+      <section id="contact" class="section container">
+        <header class="section__head">
+          <h2 class="section__title">Let's work together</h2>
+          <p class="section__desc">
+            Tell me about your idea — I'll reply within 24 hours.
+          </p>
+        </header>
 
-      <div class="contact">
-        <a class="btn btn--primary btn--lg" href="mailto:francisadom1379@gmail.com?subject=Project%20Inquiry">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 6 9 7 9-7v12H3zM21 6H3l9 7 9-7Z"/></svg>
-          francisadom1379@gmail.com
-        </a>
-        <p class="contact__note">Phone: +1 704 232 3814 | Prefer socials? DM me on LinkedIn or GitHub above.</p>
+        <div class="contact">
+          <a
+            class="btn btn--primary btn--lg"
+            href="mailto:francisadom1379@gmail.com?subject=Project%20Inquiry"
+          >
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m3 6 9 7 9-7v12H3zM21 6H3l9 7 9-7Z" />
+            </svg>
+            francisadom1379@gmail.com
+          </a>
+          <p class="contact__note">
+            Phone: +1 704 232 3814 | Prefer socials? DM me on LinkedIn or GitHub
+            above.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Simple, tidy footer -->
+    <footer class="site-footer">
+      <div class="container footer__inner">
+        <p>© <span id="year"></span> Francis Adom. Built with care.</p>
+        <p class="muted">
+          Focused on mobile-first performance & accessibility.
+        </p>
       </div>
-    </section>
-  </main>
-
-  <!-- Simple, tidy footer -->
-  <footer class="site-footer">
-    <div class="container footer__inner">
-      <p>© <span id="year"></span> Francis Adom. Built with care.</p>
-      <p class="muted">Focused on mobile-first performance & accessibility.</p>
-    </div>
-    <!-- Tiny inline script only to set the year (optional; remove if you want pure HTML/CSS) -->
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-  </footer>
-</body>
+      <!-- Tiny inline script only to set the year (optional; remove if you want pure HTML/CSS) -->
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+    </footer>
+  </body>
 </html>
